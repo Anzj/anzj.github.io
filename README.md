@@ -1,73 +1,59 @@
-# Space Jekyll
+# stepbystep  
+A jekyll theme, simple and clear, compatible with PC iPad and Phone (RWD)
 
-A simple and elegant Jekyll theme based on Spacemacs. The theme works well on mobile devices as well.
+## Preview
+#### PC or Pad
+<img style="box-shadow: 10px 10px 5px #888888;border: 1px solid black;" src="https://github.com/jokinkuang/stepbystep/raw/master/article.png"></img>
+#### Mobile
+<div style="box-shadow: 10px 10px 5px #888888;border: 1px solid black;">
+<img style="width:50%;" src="https://github.com/jokinkuang/stepbystep/raw/master/mobile.png"></img>
+<img style="width:50%;" src="https://github.com/jokinkuang/stepbystep/raw/master/mobile2.png"></img>
+</div>
 
-See a live demo [here](https://victorvoid.github.io/space-jekyll-template/).
+## Feature  
 
-![](https://github.com/victorvoid/space-jekyll-template/blob/master/screenshot.png?raw=true)
+1. Compatible with PC iPad and Phone (RWD)
+2. Support blogger mood-talk(说说)
+3. Support post subdirs as post categories  
+  `_post/linux/nodejs/2016-9-1-About-Nodejs.md => linux and nodejs would merge into the post categories`
 
-# Site/User Settings
+## Install
+assume the github username is "hello" then:  
 
-customize your site in ``_config.yml``
+1. create a repository named "hello.github.io"  
+2. clone this repository  
+  `git clone https://github.com/jokinkuang/stepbystep.git`  
+3. push the whole thing to your repo "hello.github.io"  
+  `git remote set-url origin https://github.com/hello/hello.github.io.git`  
+  `git push origin master`  
+4. browse "hello.github.io"  
 
-```ruby
+> if your github username is "world" then replace upper "hello" all to "world"  
 
-# Site settings
-description: A blog about lorem ipsum
-baseurl: "" # the subpath
-url: "" # the base hostname &/|| protocol for your site 
+## Custom Domain  
+if you want to visit "www.hello.com" instead of "hello.github.io" then:  
 
-# User settings
-username: Lorem Ipsum
-user_description: Lorem Developer
-user_title: Lorem Ipsum
-email: lorem@ipsum.com
-twitter_username: loremipsum
-github_username:  loremipsum
-gplus_username:  loremipsum
-disqus_username: loremipsum
+1. create a file named "CNAME" (the file is already exist)  
+2. buy the "www.hello.com" domain  
+3. add following to the "CNAME"  
+  `www.hello.com`  
+4. go to the Shop where your domain bought and set the Domain DNS to:  
+  | prefix | record-type |      host       |  
+  |   www  |   CNAME     | hello.github.io |  
+5. wait a long long time  
+6. browse "www.hello.com"
 
-```
+## Custom Your Site  
+1. you need a [duoshuo](www.duoshuo.com) account  
+2. you need a [google-analytics](https://www.google.com/analytics/) account  
+3. all settings are in `_config.yml` 
 
-## How to create a post ? 
+## Other  
+whoever use this theme please add your site to the [wiki](https://github.com/jokinkuang/stepbystep/wiki)  
 
-_posts create a file .md with structure:
+## How It works  
+visit [jokinkuang.github.io](http://jokinkuang.github.io)
 
-```md
----
-layout: post
-title: "Lorem ipsum speak.."
-date: 2016-09-13 01:00:00
-image: '/assets/img/post-image.png'
-description: 'about tech'
-tags:
-- lorem
-- tech 
-categories:
-- Lorem ipsum
-twitter_text: 'How to speak with Lorem'
----
-```
+## License  
+Under The [MIT](https://tldrlegal.com/license/mit-license) License
 
-## License
-The MIT License (MIT)
-
-Copyright (c) 2016 Victor Igor
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.

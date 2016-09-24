@@ -1,51 +1,61 @@
 # Site settings
-title: Anzj'Blog
-description: "Android 从入门到放弃_(:зゝ∠)_"
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://anzj.github.io"
+title: Your Title
+author: author
+email:
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
 
-# User settings
-username: Zhao Jie
-user_title: user_title
-email: oaierp@gmail.com
-twitter_username: Olvep
-github_username:  anzj
-gplus_username:  114566090922416186131
-disqus_username: jiezzzo
 
-# Build settings
-markdown: kramdown
+# Site URL NOTE: if your site is base on subdir /blog you should change base to "/blog"
+domain: "http://yourdomain.github.io" # the domain URL for your site
+base: ""  # the relative path that different with domain so you can test locally
+
+# Source URL NOTE: end with / cause it's [URL + FILE]
+w3c_url: "/w3c/"  # the base url of css js and images
+postImage_url: "/w3c/images/" # the base url of post images
+postfile: "/db/Postfile" # the Database
+sitefile: "/db/Sitefile" # the Database
+
+# 3rd URL
+duoshuo_short_name: "sbys" # the user of user.domain.com
+duoshuo_user_uid: "6324572809590735618" # the admin user uid
+duoshuo_user_name: "xk" # the admin user name
+duoshuo_max_depth: "2"  # the max_depth setting in duoshuo comments
+duoshuo_url: "/w3c/duoshuo/embed.min.js" # the local duoshuo comment plugin, you can change it to remote "http://static.duoshuo.com/"
+jquery_url: "http://cdn.bootcss.com/jquery/3.1.0/jquery.min.js" # use cdn
+baiduTemplate_url: "/w3c/js/baiduTemplate.js" #use local
+google_analytics_id: "UA-83197743-1"
+
+# Build Settings
+excerpt_separator: "\n\n" # you can specify your own separator here, default is "\n\n" String
+permalink: /:year/:month/:day/:title.html
 highlighter: rouge
-permalink: /:title/
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: true # a newline in markdown text would be changed to <br>
+gems:
+  - jemoji
 
+# Following is got in Github Help With Configuring Jekyll
 
-# html minify
-compress_html:
-  clippings: all
-  comments: all
-  endings: []
-  profile: false
+# Github Page Default Settings which you can override:
+# kramdown:
+#   input: GFM
+#   hard_wrap: false
+# gems:
+#   - jekyll-coffeescript
+#   - jekyll-paginate
 
-# Links to include in menu navigation
-# For external links add external: true
-links:
-  - title: home
-    url: /
-  - title: my posts
-    url: /posts
-  - title: series
-    url: /series
-  - title: tags
-    url: /tags
-  - title: About me
-    url: /about
-# projects in header index
-projects:
-  - name: asciilang
-    url: https://github.com/victorvoid/asciilang
-  - name: vim-frontend
-    url: https://github.com/victorvoid/vim-frontend
-  - name: generator-capybara
-    url: https://github.com/victorvoid/generator-capybara 
-# exclude my node related stuff
-exclude: ['package.json', 'src', 'node_modules']
+# Github Page override the following settings which you cannot change:
+# lsi: false
+# safe: true
+# source: [your repo's top level directory]
+# incremental: false
+# highlighter: rouge
+# gist:
+#  noscript: false
+# kramdown:
+#  math_engine: mathjax
