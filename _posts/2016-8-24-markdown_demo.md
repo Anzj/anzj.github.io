@@ -9,7 +9,8 @@ pid: 20160824-123811
 
 > 一个用来测试当前站点的Markdown样式的Demo
 
-{:use_numbered_headers => true}
+## 目录
+
 * auto-gen TOC:
 {:toc}
 
@@ -17,6 +18,7 @@ pid: 20160824-123811
 Attentions (放在开头)：
 
 1,markdown的解析遇到一个空行作为一次解析，所以上下两个语法需要有一个空行做间隔。
+  (块与块之间需要以空行间隔，这是kramdown的语法)
   比如：
   # H1
   ## H2
@@ -81,7 +83,7 @@ Some of these words _are emphasized also_.
 Use two asterisks for **strong emphasis**.
 Or, if you prefer, __use two underscores instead__.
 
-> \**TEXT\**  or \__TEXT\__
+> \*\*TEXT\*\*  or \_\_TEXT\_\_
 
 ## inline code
 inline `code`
@@ -121,6 +123,41 @@ inline `code`
 *   Another item in the list.
 
 > \* 空格 TEXT
+
+## blocks in list
+
+1. Red
+
+    Green
+
+    Blue
+1. Red
+
+    > Green
+    > Blue
+
+> 1. 空格 TEXT
+> 4个空格 Next Line
+> 4个空格 Next Paragraph
+> 2. 空格 TEXT
+> 4个空格
+> 4个空格 \> Green
+> 4个空格 \> Blue
+
+## code in list
+
+1. code
+
+   ```html
+   <html></html>
+   ```
+
+> 1. 空格 TEXT
+> 3个空格
+> 3个空格 ```html
+> 3个空格 <html></html>
+> 3个空格 ``\`
+
 
 ## link
 This is an [example link](http://example.com/).
@@ -221,3 +258,7 @@ Any word wrapped with two tildes (like ~~this~~) will appear crossed out.
 GitHub supports emoji! :sparkles: :camel: :boom:
 
 To see a list of every image we support, check out the Emoji Cheat Sheet.
+
+# 本文Markdown源码
+
+[本文源码](https://raw.githubusercontent.com/jokinkuang/jokinkuang.github.io/master/_posts/2016-8-24-markdown_demo.md)
