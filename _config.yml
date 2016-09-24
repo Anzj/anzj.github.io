@@ -1,16 +1,16 @@
 # Site settings
 title: Lorem Ipsum - Web Developer
-description: "A blog about lorem ipsum ..."
+description: "Android 从入门到放弃_(:зゝ∠)_"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://victorvoid.github.io"
+url: "http://anzj.github.io"
 
 # User settings
-username: lorem ipsum
-user_title: Lorem Ipsum - FrontEnd
-email: lorem.lorem@ipsum.com
-twitter_username: loremipsum
-github_username:  loremipsum
-gplus_username:  loremipsum
+username: Zhao Jie
+user_title: user_title
+email: oaierp@gmail.com
+twitter_username: Jelly CHN
+github_username:  anzj
+gplus_username:  赵杰
 disqus_username: loremipsum
 
 # Build settings
