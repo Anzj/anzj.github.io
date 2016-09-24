@@ -1,5 +1,5 @@
 # Site settings
-title: Lorem Ipsum - Web Developer
+title: Anzj'Blog
 description: "Android 从入门到放弃_(:зゝ∠)_"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://anzj.github.io"
@@ -11,7 +11,7 @@ email: oaierp@gmail.com
 twitter_username: Olvep
 github_username:  anzj
 gplus_username:  114566090922416186131
-disqus_username: loremipsum
+disqus_username: disqus_ubbgvDsBqn
 
 # Build settings
 markdown: kramdown
