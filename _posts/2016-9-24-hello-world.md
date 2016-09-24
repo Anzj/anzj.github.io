@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 未命名文件 
+title: 第一篇博客
 tags: [新建,模板,小书匠]
 comments: true
 categories: jekyll
