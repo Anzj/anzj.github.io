@@ -7,7 +7,7 @@ categories: jekyll
 ---
 ###  Android 控件架构
 
-* 在****Android****中，控件分为两类(****ViewGroup****,****View****)。
+* 在 ****Android**** 中，控件分为两类( ****ViewGroup**** , ****View**** )。
 
 
 * ****ViewGroup****可以作为父控件包含多个****View****,并管理其包含的****View****。
