@@ -1,32 +1,16 @@
 ---
 layout: post
-title: 第一篇博客
-tags: [新建,模板,小书匠]
+title: 【读书笔记】自定义控件
+tags: [Android,读书笔记,Android群英传]
 comments: true
 categories: jekyll
 ---
+###  Android 控件架构
+
+``` markdown?linenums
+	1.在Android中，控件分为两类(ViewGroup,View)。
+	2.ViewGroup可以作为父控件包含多个View,并管理其包含的View。
+       1) 控件树--通过ViewGroup,整个界面上的控件形成一个树状结构,上层控件负责下层子控件的测量与绘制,并传递交互事件) 
 
 
-欢迎使用 **{小书匠}(xiaoshujiang)编辑器**，您可以通过==设置==里的修改模板来改变新建文章的内容。
-
-``` java?linenums
-/**
- * @author John Smith <john.smith@example.com>
-*/
-package l2f.gameserver.model;
-
-public abstract class L2Char extends L2Object {
-  public static final Short ERROR = 0x0001;
-
-  public void moveTo(int x, int y, int z) {
-    _ai = null;
-    log("Should not be called");
-    if (1 > 5) { // wtf!?
-      return;
-    }
-  }
-}
 ```
-
-
-
