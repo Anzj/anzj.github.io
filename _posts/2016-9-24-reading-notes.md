@@ -19,6 +19,6 @@ categories: jekyll
 
 
 * **View**所有的监听事件，都通过***WindowManagerService***来进行接收，并通过**Activity**对象来回调相应的***onClickListener***
-* 
+
 * **Activity**的***requestWindowFeature()*** 实际上执行的是**PhoneWIndow**的***requestFeature()*** 方法，而**PhoneWIndow**的优先级要比**ContentView**(也就是**Activity**对象)要高，所以**Activity**的***requestWindowFeature()*** 方法要在***setContentView()*** 方法之前执行。[具体可以在这查看](http://blog.csdn.net/kuai_jia_long/article/details/45834343)
 
