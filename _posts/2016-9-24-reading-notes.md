@@ -5,7 +5,7 @@ tags: [Android,读书笔记,Android群英传]
 comments: true
 categories: jekyll
 ---
-#  Android 控件架构
+##  Android 控件架构
 
 * 在 **Android** 中，控件分为两类( **ViewGroup** , **View** )。
 
