@@ -21,4 +21,6 @@ categories: jekyll
 * **View**所有的监听事件，都通过***WindowManagerService***来进行接收，并通过**Activity**对象来回调相应的***onClickListener***
 
 * **Activity**的***requestWindowFeature()*** 实际上执行的是**PhoneWIndow**的***requestFeature()*** 方法，而**PhoneWIndow**的优先级要比**ContentView**(也就是**Activity**对象)要高，所以**Activity**的***requestWindowFeature()*** 方法要在***setContentView()*** 方法之前执行。[具体可以在这查看](http://blog.csdn.net/kuai_jia_long/article/details/45834343)
+ *当程序在 ***onCreate()*** 方法中调用  ***setContentView()*** 方法后, ***ActivityManagerService*** 会回调 ***onResume()*** 方法，此时系统才会把整个 ***DecorView*** 添加到 ***PhoneWindow*** 中，并让其显示出来，从而最终完成界面的绘制。*  所以如果 ***requestWindowFeature()***  在***setContentView()***  方法执行后执行的话，那时界面已经绘制完成并展现出来了，已经不能再执行***PhoneWindow*** 的方法了。
+ 
 
